@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>台北兩日遊行程規劃</title>
+<style>
+  :root{
+    --bg:#10141c; --card:#1a2030; --card2:#222a3d; --line:#2c3550;
+    --txt:#e8edf6; --sub:#9aa6c0; --accent:#ff6b6b; --accent2:#4dd0e1; --gold:#ffd166;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:"PingFang TC","Microsoft JhengHei","Noto Sans CJK TC",sans-serif;
+    background:radial-gradient(1200px 600px at 80% -10%,#1b2740 0,var(--bg) 55%);color:var(--txt);
+    line-height:1.7;padding:32px 16px 64px}
+  .wrap{max-width:920px;margin:0 auto}
+  header{text-align:center;margin-bottom:28px}
+  header h1{font-size:34px;letter-spacing:2px;background:linear-gradient(90deg,var(--accent),var(--gold));
+    -webkit-background-clip:text;background-clip:text;color:transparent}
+  header p{color:var(--sub);margin-top:8px;font-size:15px}
+  .note{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent2);
+    border-radius:10px;padding:12px 16px;color:var(--sub);font-size:13px;margin:18px 0}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:18px 0}
+  .fact{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px}
+  .fact b{color:var(--accent2);display:block;font-size:13px;margin-bottom:4px}
+  .fact span{font-size:14px}
+  .day{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;margin:22px 0;
+    box-shadow:0 8px 30px rgba(0,0,0,.25)}
+  .day h2{font-size:22px;display:flex;align-items:center;gap:10px;margin-bottom:4px}
+  .day h2 .badge{background:linear-gradient(90deg,var(--accent),var(--gold));color:#1a1208;
+    font-size:13px;padding:3px 10px;border-radius:20px;font-weight:700}
+  .day .tag{color:var(--sub);font-size:13px;margin-bottom:16px}
+  .item{display:grid;grid-template-columns:78px 1fr;gap:14px;padding:12px 0;border-top:1px dashed var(--line)}
+  .item:first-of-type{border-top:none}
+  .time{color:var(--gold);font-weight:700;font-size:14px;text-align:right;padding-top:2px}
+  .place b{font-size:16px}
+  .place .desc{color:var(--sub);font-size:13.5px;margin-top:2px}
+  .mrt{display:inline-block;margin-top:7px;font-size:12.5px;color:var(--accent2);
+    background:rgba(77,208,225,.12);border:1px solid rgba(77,208,225,.35);
+    border-radius:20px;padding:2px 10px}
+  .food{margin:10px 0 0 92px;background:var(--card2);border:1px solid var(--line);
+    border-radius:10px;padding:12px 14px;font-size:13.5px;color:var(--sub)}
+  .food b{color:var(--accent)}
+  .rain{margin:14px 0 0;background:linear-gradient(180deg,#16202e,#141a28);border:1px solid var(--line);
+    border-left:4px solid #5b8def;border-radius:10px;padding:12px 16px;font-size:13.5px;color:var(--sub)}
+  .rain b{color:#7fa8ff;display:block;margin-bottom:4px;font-size:14px}
+  .buy{margin:10px 0 0 92px;background:var(--card2);border:1px solid var(--line);
+    border-radius:10px;padding:12px 14px;font-size:13.5px;color:var(--sub)}
+  .buy b{color:var(--gold)}
+  .tips{background:linear-gradient(180deg,#1a2233,#161c2a);border:1px solid var(--line);
+    border-radius:16px;padding:22px;margin-top:22px}
+  .tips h2{font-size:20px;margin-bottom:12px;color:var(--accent2)}
+  .tips ul{list-style:none}
+  .tips li{padding:8px 0 8px 26px;position:relative;font-size:14px;border-top:1px dashed var(--line)}
+  .tips li:first-child{border-top:none}
+  .tips li::before{content:"✦";position:absolute;left:0;color:var(--gold)}
+  footer{text-align:center;color:var(--sub);font-size:12px;margin-top:30px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>台北兩日遊 · 行程規劃</h1>
+    <p>經典地標 × 溫泉老街 × 夜市小吃，兩天玩得充實不趕場</p>
+  </header>
+
+  <div class="grid">
+    <div class="fact"><b>最佳季節</b><span>春（3-5月）秋（9-11月）氣候最舒適</span></div>
+    <div class="fact"><b>交通神卡</b><span>悠遊卡 / 一卡通 搭車便利商店通用</span></div>
+    <div class="fact"><b>機場進城</b><span>機場捷運約 35 分抵台北車站</span></div>
+    <div class="fact"><b>貨幣</b><span>新台幣（NTD），免小費</span></div>
+  </div>
+
+  <!-- DAY 1 -->
+  <div class="day">
+    <h2><span class="badge">Day 1</span> 經典台北 · 地標與夜市</h2>
+    <div class="tag">阜航豆漿（早餐）→ 國父紀念館 / 101夜景（信義區）→ 中正區 → 西門町 → 饒河夜市</div>
+
+    <div class="item">
+      <div class="time">08:00</div>
+      <div class="place"><b>阜航豆漿（早餐）</b>
+        <div class="desc">位於華山市場二樓，台北最知名的早餐名店之一，厚燒蛋餅、東山鴨頭、米漿必點。平日約 5:30 開門，早上去人少，建議 08:00 前到避開排隊人潮。</div>
+        <div class="mrt">🚇 善導寺站（板南線）· 2 號出口步行約 3–5 分（華山市場）</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="time">09:30</div>
+      <div class="place"><b>國父紀念館</b>
+        <div class="desc">與 101 同屬信義區，從善導寺搭板南線往東約 15–20 分即達。館前廣場正對台北 101，是拍地標的免費機位；每日每整點有衛兵交接儀式，館內免費參觀。09:30 抵達，可看 <b>10:00 整點場</b>。</div>
+        <div class="mrt">🚇 國父紀念館站（板南線）· 出站即達</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="time">12:30</div>
+      <div class="place"><b>中正紀念堂</b>
+        <div class="desc">白色巨殿與自由廣場地標。衛兵交接儀式每日 9:00–17:00 每整點一場（除夕、大年初一、228 紀念日及保養日停演），約 10–15 分鐘，建議提前 5–10 分鐘到主大廳佔位。你 12:30 抵達，可看 <b>13:00 整點場</b>。</div>
+        <div class="mrt">🚇 中正紀念堂站（板南線／松山新店線）· 出站即達</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="time">14:30</div>
+      <div class="place"><b>西門町</b>
+        <div class="desc">年輕文化與潮流街区，逛街、唱片的、街頭小吃與紅樓文創，適合散步拍照。</div>
+        <div class="mrt">🚇 西門站（板南線／松山新店線）· 出站即達</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="time">18:00</div>
+      <div class="place"><b>台北 101 & 信義商圈（夜景）</b>
+        <div class="desc">18:00 抵達正值藍調時刻，101 點燈、城市華燈初上，夜景最美；觀景台結束後可在 B1 美食街、信義商圈逛，鄰近鼎泰豐信義店可吃小籠包。</div>
+        <div class="mrt">🚇 台北 101／世貿站（板南線）· 出站即達</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="time">20:00</div>
+      <div class="place"><b>饒河街夜市</b>
+        <div class="desc">台北指標性觀光夜市，從捷運松山站走出來就是。20:00 攤位全開、人氣正旺，吃完可順遊五分埔服饰街。</div>
+        <div class="mrt">🚇 松山站（松山新店線）· 出站步行約 5 分</div>
+      </div>
+    </div>
+
+    <div class="food">
+      <b>今日必吃：</b>福州世祖胡椒餅（饒河）、藥燉排骨、蚵仔煎、大雞排、永康牛肉麵（可挪到白天）、珍珠奶茶。
+    </div>
+
+    <div class="rain">
+      <b>☔ Day 1 雨天備案</b>
+      國父紀念館、中正紀念堂、台北 101 觀景台都是室內，雨天真的不影響，照原計畫走即可。較受雨影響的是戶外段：<br>
+      • <b>西門町</b>：改逛紅樓二樓展覽、西門誠品、電影街與騎樓商家，都在遮蔽處。<br>
+      • <b>饒河夜市</b>：若雨大，改去松山站共構的「京站時尚廣場」美食街＋購物；或改逛遮罩較多的「寧夏夜市」、台北地下街。想吃廟口小吃也能改去「慈祐宮」周邊攤商。
+    </div>
+  </div>
+
+  <!-- DAY 2 -->
+  <div class="day">
+    <h2><span class="badge">Day 2</span> 文化 × 關渡 × 淡水夕陽</h2>
+    <div class="tag">故宮 → 關渡 → 重建街／福佑宮 → 淡水老街（最後一站）→ 高鐵回高雄</div>
+
+    <div class="item">
+      <div class="time">09:30</div>
+      <div class="place"><b>故宮博物院</b>
+        <div class="desc">鎮館三寶：翠玉白菜、肉形石、毛公鼎。建議預留 2-3 小時，週一休館留意一下。</div>
+        <div class="mrt">🚇 士林站（淡水信義線）轉公車紅 30／255／304 約 10–15 分</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="time">13:00</div>
+      <div class="place"><b>關渡</b>
+        <div class="desc">搭捷運淡水信義線（紅線）往淡水方向，關渡站下車即達，順路不繞。逛關渡宮、關渡自然公園賞濕地與候鳥，運氣好能看到夕照下的河口風光。</div>
+        <div class="mrt">🚇 關渡站（淡水信義線）· 出站即達</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="time">15:30</div>
+      <div class="place"><b>重建街／滬尾老街後段 + 福佑宮</b>
+        <div class="desc">留在淡水老街周邊散步：重建街是台北最古老街區之一，石階、老厝與紅磚牆很有味道；終點的福佑宮是淡水重要媽祖廟，香火鼎盛。走完再下坡回到老街主段用餐與採買，零交通成本。</div>
+        <div class="mrt">🚇 淡水站（淡水信義線）· 老街後段步行即達，福佑宮在老街中段</div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="time">16:30</div>
+      <div class="place"><b>淡水老街（最後一站）</b>
+        <div class="desc">回程前的最後一站：沿河岸老街吃小吃（魚丸湯、阿給、鐵蛋、酸梅湯），採買伴手禮、吹吹淡水河風，約 18:00 前往淡水站搭車回台北。</div>
+        <div class="mrt">🚇 淡水站（淡水信義線）· 出站即達</div>
+      </div>
+      <div class="buy">
+        <b>🛍 必買清單：</b>鐵蛋、魚酥、老牌老婆餅、旺來酥（鳳梨酥）。
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="time">18:30</div>
+      <div class="place"><b>回程：高鐵回高雄</b>
+        <div class="desc">18:30 自淡水站出發，搭捷運紅線直達台北車站（約 42 分，約 19:15 抵達）→ 站內轉乘高鐵直達「高鐵左營站」（台北→左營約 1 小時 35 分，搭 19:45 或 20:15 車次，抵左營約 21:20–21:50）→ 再接高雄捷運／台鐵回住宿點，約 22:00 前後到家。建議出發前先買好高鐵票，避開連假與週末熱門班次；台北末班車約 22:16，時間綽綽有餘。</div>
+        <div class="mrt">🚇 淡水站（紅線）→台北車站轉高鐵台北站→高鐵左營站（高雄）</div>
+      </div>
+    </div>
+
+    <div class="food">
+      <b>今日必吃：</b>淡水魚丸湯、阿給（豆皮包粉絲）、鐵蛋、酸梅湯；關渡可順遊賞鳥後到淡水老街續攤。
+    </div>
+
+    <div class="rain">
+      <b>☔ Day 2 雨天備案</b>
+      <b>故宮博物院</b>本身是室內，雨天反而最適合，照常去。<br>
+      • <b>關渡</b>：自然公園濕地是戶外，雨天改以「關渡宮」（室內廟宇）與「關渡自然公園生態展示館」為主；想泡湯可臨時補回「北投溫泉」（關渡前一站，室內湯屋）。<br>
+      • <b>淡水老街</b>：騎樓與店家多遮雨，可加逛「小白宮（前英國領事館宿舍）」室內展。重建街若雨大，改以「福佑宮」室內參拜為主，或改去「淡水文物館」與「滬尾藝文休閒園區」。<br>
+      • <b>整段替代</b>：若午後雨勢大，下午可改去「士林官邸」室內展館，或「台北當代藝術館」（捷運中山站，全室內），回程再搭高鐵。
+    </div>
+  </div>
+
+  <!-- TIPS -->
+  <div class="tips">
+    <h2>實用貼士</h2>
+    <ul>
+      <li><b>交通：</b>下載「Google Maps」＋「台北捷運 Go」App，路線與即時班次都很準。</li>
+      <li><b>網路：</b>機場可租 WiFi 蛋或買預付 SIM 卡（台灣大哥大／中華電信），便利商店也有賣。</li>
+      <li><b>悠遊卡：</b>捷運、公車、YouBike、7-11／全家都通用，進出景點也常能打折。</li>
+      <li><b>預算參考：</b>每日交通約 150-250 NTD，餐飲每餐 100-300 NTD，溫泉湯屋約 400-800 NTD／人。</li>
+      <li><b>備案：</b>若喜歡自然，Day2 可改去「貓空纜車＋台北動物園」或搭台鐵去「九份老街」看山海夜景（需較多交通時間）。</li>
+      <li><b>天氣：</b>夏季午後易雷陣雨，隨身帶傘；冬季濕冷，北投泡湯最舒服。</li>
+    </ul>
+  </div>
+
+  <footer>行程僅供參考，請依當日天氣、景點開放時間與自身體力彈性調整 ✦ 祝你玩得開心</footer>
+</div>
+</body>
+</html>
